@@ -1,0 +1,46 @@
+<html>
+
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Jason Validator for interview </h1>
+</body>
+
+</html>
+
+<script>
+
+const ws = new WebSocket("ws://localhost:8081")
+
+ws.addEventListener('open',e=>{
+ws.send(JSON.stringify({
+    name: 'Roshan',
+phone: 8210592314,
+address: {
+    contactName: 'Sunny',
+    detailAddress: {
+        line1: 'Sector: 2/A',
+        line2: 'Q. No.: 3-018',
+        line3: 'Near Shopping Centre'
+    },
+    pin: 827001,
+    country: 'India'
+},
+cart: 
+    {
+        id: 'newId',
+        count: 2
+    }
+
+  
+    
+}))
+
+});
+
+
+</script>
